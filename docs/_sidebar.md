@@ -1,9 +1,10 @@
--   基础知识
+-   基础
 
-    -   JavaScript
+    - [DOM](dom.md)
+    - [BOM](bom.md)
 
-        -   [DOM](/my-docs/dom.md)
+- 框架
 
-        -   [BOM](/my-docs/bom.md)
-
-    -   Html
+    - [VUE](vue.md)
+    - [React](react.md)
+- 其他

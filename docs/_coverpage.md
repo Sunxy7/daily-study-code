@@ -5,4 +5,4 @@
 -   其他主题～
 
 [关于作者](https://github.com/sunxy7)
-[开始阅读](/my-docs/home.md)
+[开始阅读](dom.md)

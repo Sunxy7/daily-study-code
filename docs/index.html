@@ -13,14 +13,17 @@
         <script>
             window.$docsify = {
                 name: '日常随笔',
-                namePath: '/',
-                repo: 'https://sunxy7.github.io/daily-study-code/',
-                loadSidebar: 'sidebar.md', // 自定义侧边栏,默认加载_sidebar.md文件
-                homepage: '/', // 首页加载的文件路径
+                // nameLink: '/', //  点击name跳转到的链接
+                basePath: '/',
+                repo: 'https://sunxy7.github.io/daily-study-code/docs', // 页面右上角会有一个github链接
+                loadSidebar: true, // 自定义侧边栏,默认加载_sidebar.md文件
+                coverpage: true, // 启用封面页，默认加载_coverpage.md
+                loadNavbar: true, // 顶部导航栏,默认加载_navbar.md
+                // homepage: './dom.md', // 首页加载的文件路径
                 relativePath: true, // 启用相对路径
-                subMaxLevel: 5, // 最大可渲染的目录层级数
-                loadSidebar: true, // 启用侧边栏
-                coverpage: true, // 启用封面
+                mergeNavbar: true,
+                maxLevel: 4,
+                subMaxLevel: 2, // 最大可渲染的目录层级数
                 search: {
                     placeholder: '搜索',
                     noData: '找不到结果'
@@ -30,7 +33,11 @@
         <!-- Docsify v4 -->
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
-        <!-- 支持搜索 -->
-        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+      <!-- 支持解析表情 -->
+      <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+      <!-- 支持搜索 -->
+      <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+      <!-- JavaScript 语法高亮 -->
+      <script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
     </body>
 </html>

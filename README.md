@@ -1,3 +1,2 @@
-# daily-study-code
-
-### 主要放一些练习代码，使用 docsify 生成技术文档
+一些日常代码～
+使用了 docsify 生成技术文档
