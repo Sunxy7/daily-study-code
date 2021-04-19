@@ -5,24 +5,63 @@
         <title>dom</title>
     </head>
     <body>
-        <div>
-            <ul id="list">
-                <li>第一个li</li>
+        <div id="div">
+            <ul id="list" class="list">
+                <!-- <li>注释</li> -->
+                <li id="first"><span>第一个li</span></li>
+                <!-- 也是注释 -->
                 <li>第二个li</li>
-                <!-- <li>第三个li</li> -->
+                <li>第三个li</li>
                 <li>第四个li</li>
             </ul>
+            <div id="div1" class="div" name="test">
+                <p>我是第一个p标签</p>
+            </div>
+            <div id="div2" class="div" name="test">
+                <p>我是第二个p标签</p>
+            </div>
         </div>
         <script>
-            let listNode = document.querySelector('#list'); // 获取节点、节点类型/节点名称等
-            console.log('listNode', listNode);
-            // 节点和元素的区别？？
+            let first = document.querySelector('#first');
+            let div = document.querySelector('#div1');
+            let newNode = first.cloneNode(true);
+            // div.insertBefore(newNode, div.firstChild);
+            div.replaceChild(newNode, div.firstChild);
+            // console.log(node.parentNode, node.parentElement);
+            // console.log(node.childNodes, node.children, node.firstChild, node.firstElementChild);
+            // console.log(node.nextElementSibling, node.nextSibling, node.previousElementSibling, node.previousSibling);
+            // let listNode = document.querySelector('.list'); // 获取节点、节点类型/节点名称等
+            // // listNode.children
+            // console.log('listNode', listNode.children, listNode.childNodes);
+            // // listNode.childNodes.forEach((item) => {
+            // //     console.log(item, item.nodeType);
+            // // });
+
+            // let newNode = document.createElement('li');
+            // let newCloneNode = listNode.cloneNode(true);
+
+            // let firstNode = document.querySelector('#first');
+            // newNode.textContent = '11123456';
+            // listNode.appendChild(newCloneNode);
+            // listNode.insertBefore(newNode, firstNode);
+            // document.querySelectorAll('div');
+            // document.querySelector('div');
+            // listNode.querySelectorAll('li');
+            // listNode.querySelector('li');
+            // let id = document.getElementById('div');
+            // let classList = document.getElementsByClassName('div');
+            // let nameList = document.getElementsByName('test');
+            // let tagList = document.getElementsByTagName('li');
+
+            // console.log(listNode, newCloneNode, document.querySelector('div'));
+            // console.log('test', id, classList, nameList, tagList);
+
+            // 节点和元素的区别？？ 节点包含元素节点、属性节点、注释节点等，元素节点只有标签元素类型的节点
             // dom节点的关系查找
             // dom属性操作和ECMA属性操作、区别？ECMAScript-->js
             // 增删改、替换节点的方法 克隆
             //元素在页面位置 getBoundingClientReat()  获取绝对尺寸的方法
             // table的操作方法
-            // 视频看到dom7结束
         </script>
     </body>
 </html>
